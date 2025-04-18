@@ -64,6 +64,7 @@ hr {
 #search-area {
     background-color: #EEEEEE;
     width: 100%;
+    margin:auto;
 }
 
 #search-area strong {
@@ -71,16 +72,26 @@ hr {
     font-weight: 600;
 }
 
-#search-box {
-    width: 75%;
-    background-color: white;
+#search-wrapper {
+    align-items:center; 
+    flex-basis:auto;
+    width:80%;
+    height: 10%;
+    margin: auto;
 }
 
-#search-button {
-    background-color: blue;
+.search-box {
+    width: 90%;
+    background-color: white;
+    height: 50%;
+}
+
+.search-button {
+    background-color: #0277BD;
     color: white;
-    font-weight:200;
-    width: 10%;
+    font-weight: bold;
+    width: 7%;
+    height:50%;
 }
 
 #search-area ul {
@@ -119,4 +130,30 @@ hr {
     border-radius: 8px;           /* Rounded corners (optional) */
     padding: 1rem;                /* Space inside the box */
     background-color: #EEEEEE;
+}
+
+#main-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    gap: 2rem;
+}
+
+/* Main content should take most of the space */
+#main-content {
+    flex: 2;
+}
+
+/* Sidebar takes up less space */
+#right-sidebar {
+    flex: 1.5;
+    padding: 1rem;
+    border-left: 2px solid #ccc;
+}
+
+/* Optional: Style links inside sidebar */
+#right-sidebar .link {
+    display: block;
+    margin-bottom: 10px;
 }
