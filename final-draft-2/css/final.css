@@ -205,7 +205,6 @@ hr {
 #right-sidebar {
     flex: 1.5;
     padding: 1rem;
-    border-left: 2px solid #ccc;
 }
 
 #right-sidebar ul {
