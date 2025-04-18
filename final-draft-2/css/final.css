@@ -1,0 +1,122 @@
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.nav-link {
+    float: left;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    background-color: #222;
+}
+
+.nav-link:hover, .nav-link:focus-visible {
+    background-color: #67B1FF;
+    outline:none;
+}
+
+.current-page {
+    float:left;
+    display: block;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    background-color: #cfb87c;
+}
+
+.current-page:hover, .current-page:focus-visible {
+    background-color: #67B1FF;
+}
+
+.split {
+    display: block;
+    float: right;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    background-color: #cfb87c;
+}
+
+.split:hover, .split:focus-visible {
+    background-color: #67B1FF;
+}
+
+hr {
+    border: 3px solid #cfb87c;
+    margin: 0;
+}
+
+#search-area {
+    background-color: #EEEEEE;
+    width: 100%;
+}
+
+#search-area strong {
+    font-size: 22;
+    font-weight: 600;
+}
+
+#search-box {
+    width: 75%;
+    background-color: white;
+}
+
+#search-button {
+    background-color: blue;
+    color: white;
+    font-weight:200;
+    width: 10%;
+}
+
+#search-area ul {
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end; /* aligns it to the right */
+}
+
+.link {
+    color: #0000EE;
+}
+
+.link:hover, .link:focus-visible {
+    color: #551A8B;
+}
+
+#content-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+#info-wrapper {
+    width: 90%;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+#q1, #q2, #q3, #q4 {
+    border: 2px solid #222;       /* Dark border around each box */
+    border-radius: 8px;           /* Rounded corners (optional) */
+    padding: 1rem;                /* Space inside the box */
+    background-color: #EEEEEE;
+}
