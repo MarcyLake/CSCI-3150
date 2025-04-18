@@ -223,3 +223,17 @@ hr {
     background-color:#40404040;
     width:100%;
 }
+
+@media screen and (max-width: 768px) {
+  #main-layout {
+    flex-direction: column;
+  }
+
+  #right-sidebar {
+    order: 2;
+  }
+
+  #main-content {
+    order: 1;
+  }
+}
