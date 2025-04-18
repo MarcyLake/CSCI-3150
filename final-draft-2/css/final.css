@@ -1,5 +1,6 @@
 nav {
     background-color: #222;
+    margin: 0;
 }
 
 nav ul {
@@ -64,7 +65,7 @@ hr {
 #search-area {
     background-color: #EEEEEE;
     width: 100%;
-    margin:auto;
+    margin:0;
 }
 
 #search-area strong {
@@ -140,20 +141,29 @@ hr {
     gap: 2rem;
 }
 
-/* Main content should take most of the space */
 #main-content {
     flex: 2;
 }
 
-/* Sidebar takes up less space */
 #right-sidebar {
     flex: 1.5;
     padding: 1rem;
     border-left: 2px solid #ccc;
 }
 
-/* Optional: Style links inside sidebar */
-#right-sidebar .link {
+#right-sidebar ul {
+    list-style-type: none;
+}
+
+#right-sidebar .aside-link {
     display: block;
     margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #222;
+}
+
+#right-sidebar .aside-link:hover {
+    background-color:#40404040;
+    width:100%;
 }
