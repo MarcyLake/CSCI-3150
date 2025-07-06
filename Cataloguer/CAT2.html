@@ -1,0 +1,14 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="588063223463-rl9e605ap714am85kb64ego42uo3adb9.apps.googleusercontent.com">
+<script>
+  window.onload = function () {
+    google.accounts.id.initialize({
+      client_id: '588063223463-rl9e605ap714am85kb64ego42uo3adb9.apps.googleusercontent.com',
+      callback: handleCredentialResponse
+    });
+    google.accounts.id.prompt();
+  };
+</script>
+<body>
+    <p>Webpage pogger</p>
+</body>
